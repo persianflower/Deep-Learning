@@ -7,9 +7,9 @@ To develop a Convolutional Neural Network (CNN) for image classification and und
 ### Deliverables:
 
 - Jupyter Notebook/Python Script.
-  - [Code file](LNT_Task_1/LNT_TASK_1.ipynb)
+  - [Code file](LNT_TASK_1.ipynb)
 - Saved CNN model file.
-  - [Models]([LNT_Task_1/saved_model](https://github.com/persianflower/Deep-Learning/tree/main/LNT_Task_1/saved_model))
+  - [Models](https://github.com/persianflower/Deep-Learning/tree/main/LNT_Task_1/saved_model)
 - Accuracy and loss curves.
   ![Curve](https://github.com/persianflower/Deep-Learning/blob/main/LNT_Task_1/outputs/acc%20%26%20loss%20curve.png)
 - Performance evaluation report
