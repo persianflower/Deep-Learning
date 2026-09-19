@@ -5,5 +5,5 @@ Index
 
 | Title | Description |
 | -- | -- |
-| Fashion MNIST | Classification of given dataset via CNN and deeper CNN |
+| LNT Task 1 | Classification of Fashion MNIST dataset via CNN and deeper CNN |
 
