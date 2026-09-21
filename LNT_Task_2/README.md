@@ -11,15 +11,15 @@ To implement transfer learning using pre-trained deep learning models and analyz
 - Accuracy and loss visualizations.
   - RESNET 50
     
-  ![Accuracy](LNT_Task_2/outputs/resnet_acc.png)
+  ![Accuracy](https://github.com/persianflower/Deep-Learning/blob/main/LNT_Task_2/outputs/resnet_acc.png)
   
-  ![Loss](LNT_Task_2/outputs/resnet_loss.png)
+  ![Loss](https://github.com/persianflower/Deep-Learning/blob/main/LNT_Task_2/outputs/resnet_loss.png)
 
   - CNN
 
-  ![Accuracy](LNT_Task_2/outputs/cnn_acc.png)
+  ![Accuracy](https://github.com/persianflower/Deep-Learning/blob/main/LNT_Task_2/outputs/cnn_acc.png)
   
-  ![Loss](LNT_Task_2/outputs/cnn_loss.png)
+  ![Loss](https://github.com/persianflower/Deep-Learning/blob/main/LNT_Task_2/outputs/cnn_loss.png)
   
 - Performance comparision report
 
