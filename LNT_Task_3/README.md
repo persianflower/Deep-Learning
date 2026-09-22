@@ -8,9 +8,9 @@ To prepare image or text datasets for deep learning applications through preproc
 ### Deliverables:
 
 1. Preprocessed dataset.
-   [raw dataset](LNT_Task_3/Datasets/raw_dataset_titanic.csv)
+   [raw dataset](https://github.com/persianflower/Deep-Learning/blob/main/LNT_Task_3/Datasets/raw_dataset_titanic.csv)
 2. Cleaned dataset.
-   [clean dataset](LNT_Task_3/Datasets/clean_dataset_titanic.csv)
+   [clean dataset](https://github.com/persianflower/Deep-Learning/blob/main/LNT_Task_3/Datasets/clean_dataset_titanic.csv)
 3. #### EDA report.
    
    **Key Findings:**
