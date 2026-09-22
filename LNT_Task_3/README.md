@@ -34,35 +34,35 @@ These insights are fundamental for the next step in the data science pipeline: b
    
    a. Univariate analysis
    
-   ![](LNT_Task_3/Visualization_outputs/univariate_analysis.png)
-   ![](LNT_Task_3/Visualization_outputs/univariate_analysis.png)
+   ![univariate_numerical](https://github.com/persianflower/Deep-Learning/blob/main/LNT_Task_3/Visualization_outputs/univariate_analysis.png)
+   ![univariate_categorical](https://github.com/persianflower/Deep-Learning/blob/main/LNT_Task_3/Visualization_outputs/univariate_categorical.png)
    
    b. Bivariate analysis
    
-   ![](LNT_Task_3/Visualization_outputs/bivariate feature v survival.png)
-   ![](LNT_Task_3/Visualization_outputs/age by survival.png)
+   ![bivariate](https://github.com/persianflower/Deep-Learning/blob/main/LNT_Task_3/Visualization_outputs/bivariate_feature_v_survival.png)
+   ![bivariate](https://github.com/persianflower/Deep-Learning/blob/main/LNT_Task_3/Visualization_outputs/age_by_survival.png)
    
    c. Catplots
    
-   ![](LNT_Task_3/Visualization_outputs/survival by pclass and sex.png)
-   ![](LNT_Task_3/Visualization_outputs/survival rate by family size.png)
-   ![](LNT_Task_3/Visualization_outputs/survival rate by title.png)
+   ![Catplot](https://github.com/persianflower/Deep-Learning/blob/main/LNT_Task_3/Visualization_outputs/survival_by_pclass_and_sex.png)
+   ![Catplot](https://github.com/persianflower/Deep-Learning/blob/main/LNT_Task_3/Visualization_outputs/survival_rate_by_family_size.png)
+   ![Catplot](https://github.com/persianflower/Deep-Learning/blob/main/LNT_Task_3/Visualization_outputs/survival_rate_by_title.png)
    
    d. Boxplot
    
-   ![](LNT_Task_3/Visualization_outputs/boxplot ticket fare.png)
+   ![Boxplot](https://github.com/persianflower/Deep-Learning/blob/main/LNT_Task_3/Visualization_outputs/boxplot_ticket_fare.png)
    
    e. Violin plot
    
-   ![](LNT_Task_3/Visualization_outputs/survival by age n sex.png)
+   ![Violin](https://github.com/persianflower/Deep-Learning/blob/main/LNT_Task_3/Visualization_outputs/survival_by_age_n_sex.png)
    
    f. Confusion matrix
    
-   ![](LNT_Task_3/Visualization_outputs/correlation matrix.png)
+   ![Confusion](https://github.com/persianflower/Deep-Learning/blob/main/LNT_Task_3/Visualization_outputs/correlation_matrix.png)
 
    
 7. Documentation of preprocessing steps.
-   [documentation](LNT_Task_3/LNT_Task_3 1.ipynb)
+   [documentation](https://github.com/persianflower/Deep-Learning/blob/main/LNT_Task_3/LNT_Task_3.ipynb)
 
 
 ### Project Conclusion
@@ -70,4 +70,13 @@ These insights are fundamental for the next step in the data science pipeline: b
 This project successfully implemented and cleaned a dataset for deep learning task.
 
 This end-to-end EDA has provided a deep understanding of the Titanic dataset. Our analysis confirms the "women and children first" narrative and highlights the stark social inequalities of the time. Through feature engineering, we've created even more powerful predictors for a potential machine learning model. Lastly, the dataset has been split into train-valid-test split and is ready to be used via a deep learning model.
+
+
+--
+
+## Author
+
+By: Ayesha Faquih
+
+For: LNT Assignment
 
