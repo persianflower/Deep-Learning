@@ -10,4 +10,4 @@ Index
 | LNT Task 3 | EDA of Titanic Dataset |
 | [LNT Task 4](https://github.com/persianflower/LNT_Task_4/tree/main) | Flask API of Task 1 |
 | LNT Task 5 | API Testing of Task 4 |
-
+| [LNT Task 6](https://github.com/persianflower/LNT_Task_6/tree/main) | Streamlit application |
