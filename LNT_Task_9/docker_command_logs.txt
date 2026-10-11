@@ -1,0 +1,156 @@
+
+1. Basic commands
+
+- Check Docker Version
+
+docker --version
+
+- Docker Information
+
+docker info
+
+- Docker Help
+
+docker help
+
+2. Create & manage container
+
+- Create and Run a Container
+
+docker run nginx
+
+This runs Nginx in the foreground.
+
+- Run in Background
+
+docker run -d nginx
+
+`-d` = detached/background mode.
+
+- Give Container a Name
+
+docker run -d --name my-nginx nginx
+
+- Running Containers list
+
+docker ps
+
+- All Containers List
+
+docker ps -a
+
+3. Explore docker image and registries
+
+- Download an Image
+
+docker pull nginx
+
+- List Images
+
+docker images
+
+Alternative:
+
+docker image ls
+
+- Remove an Image
+
+docker rmi nginx
+
+Or:
+
+docker image rm nginx
+
+- Force remove:
+
+docker rmi -f nginx
+
+# Build Docker Image
+
+- Basic:
+
+docker build .
+
+- Give it a name:
+
+docker build -t my-app .
+
+- Give it a version:
+
+docker build -t my-app:1.0 .
+
+- Build latest:
+
+docker build -t my-app:latest .
+
+- List it:
+
+docker images
+
+- Tag an image:
+
+docker tag my-app myusername/my-app:latest
+
+Then:
+
+docker push username/my-app:latest
+
+Another server can pull it:
+
+docker pull username/my-app:latest
+
+4. Execute container lifecycle operations
+
+- Check:
+
+docker ps -a
+
+- Start:
+
+docker start my-nginx
+
+- Restart:
+
+docker restart my-nginx
+
+- Stop:
+
+docker stop my-nginx
+
+- Remove:
+
+docker rm my-nginx
+
+- Check:
+
+docker ps -a
+
+- Remove image:
+
+docker rmi nginx
+
+- Check:
+
+docker images
+
+
+5. Study networking and storage concepts
+
+- List Networks
+
+docker network ls
+
+- Create Network
+
+docker network create my-network
+
+- Run Container on Network
+
+docker run -d \
+  --name my-nginx \
+  --network my-network \
+  nginx
+
+- Inspect Network
+
+docker network inspect my-network
