@@ -13,6 +13,8 @@ docker info
 
 docker help
 
+
+
 2. Create & manage container
 
 - Create and Run a Container
@@ -38,6 +40,8 @@ docker ps
 - All Containers List
 
 docker ps -a
+
+
 
 3. Explore docker image and registries
 
@@ -99,6 +103,9 @@ Another server can pull it:
 
 docker pull username/my-app:latest
 
+
+
+
 4. Execute container lifecycle operations
 
 - Check:
@@ -132,6 +139,7 @@ docker rmi nginx
 - Check:
 
 docker images
+
 
 
 5. Study networking and storage concepts
