@@ -25,4 +25,4 @@ flowchart TD
  
 • Testing report.
 
-[Outputs]()
+![Outputs](https://github.com/persianflower/Deep-Learning/blob/main/LNT_Task_11/Screenshot%202026-10-13%20at%2020.47.07.png)
