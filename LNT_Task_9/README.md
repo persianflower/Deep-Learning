@@ -24,14 +24,14 @@ As per the task given, following concepts were studied and executed on docker:
 
 1. Basic commands related to introduction to docker
 
-![Basic commands screenshots]()
+[Basic commands screenshots](https://github.com/persianflower/Deep-Learning/tree/main/LNT_Task_9/Outputs/Step_1)
 
 Here, we observed how to install docker as well as how to check whether it is correctly working on our system. Only basic checking of docker, its version and help commands were executed 
 in this step.
 
 2. Creation of container and its management
 
-![Container screenshots]()
+[Container screenshots](https://github.com/persianflower/Deep-Learning/tree/main/LNT_Task_9/Outputs/Step_2)
 
 For all the commands henceforth, nginx a basic docker hub repository was used. We used it to understand various commands
 as well as to execute operations. 
@@ -44,7 +44,7 @@ provides intuitive usecase.
 
 3. Creation of images
 
-![Images screenshots]()
+[Images screenshots](https://github.com/persianflower/Deep-Learning/tree/main/LNT_Task_9/Outputs/Step_3)
 
 Here, were learnt how to pull images to be used as well as how to customize the type of image to be pulled.
 We also learnt how to delete an already existing image as well as the best practises associated with it.
@@ -52,7 +52,7 @@ How to create a new image was also learnt in this section.
 
 4. Container lifecycle operation
 
-![Lifecycle screenshots]()
+[Lifecycle screenshots](https://github.com/persianflower/Deep-Learning/tree/main/LNT_Task_9/Outputs/Step_4)
 
 The docker container follows a fixed lifecycle and the operations can only be carried out if they exist in the
 valid form. Following operations are allowed:
@@ -69,7 +69,7 @@ However, it is best practise to instead stop a container before deleting it.
 
 5. Networking operations
 
-![Networking screenshots]()
+[Networking screenshots](https://github.com/persianflower/Deep-Learning/tree/main/LNT_Task_9/Outputs/Step_5)
 
 Docker allows a container to be connected to custom networks which was utilised in this section. We created our own network
 on which then we ran our container.
