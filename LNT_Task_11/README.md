@@ -3,14 +3,26 @@
 ### Objective
 
 To containerize the complete deep learning solution including model, Flask API, and  Streamlit UI.
-Approach
-• Package all application components.
-• Configure dependencies.
-• Build Docker image.
-• Perform testing.
-• Document architecture.
+
 Deliverables
+
 • Dockerized application.
+
+[Application](https://github.com/persianflower/Deep-Learning/tree/main/LNT_Task_11)
+
 • Architecture diagram.
+
+```mermaid
+flowchart TD
+    A[Start] --> B
+    B[Dockerfile] --> C{Run container}
+    C -->|Backend| D[Flask runs on port: 8501]
+    C -->|Frontend| D[Streamlit runs on local device via entrypoint command]
+    C --> F[Prediction]
+    D --> F
+    F --> G[End]
+```
+ 
 • Testing report.
 
+[Outputs]()
