@@ -17,9 +17,9 @@ flowchart TD
     A[Start] --> B
     B[Dockerfile] --> C{Run container}
     C -->|Backend| D[Flask runs on port: 8501]
-    C -->|Frontend| D[Streamlit runs on local device via entrypoint command]
-    C --> F[Prediction]
-    D --> F
+    C -->|Frontend| E[Streamlit runs on local device via entrypoint command]
+    D --> F[Prediction]
+    E --> F
     F --> G[End]
 ```
  
