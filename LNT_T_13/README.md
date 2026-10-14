@@ -9,13 +9,15 @@ To deploy and expose containerized deep learning applications in a Kubernetes en
 
 - Kubernetes deployment files.
 
-[deployment]()
+[deployment](https://github.com/persianflower/Deep-Learning/blob/main/LNT_T_13/deployment.yaml)
 
-[Dockerfile]()
+[Dockerfile](https://github.com/persianflower/Deep-Learning/blob/main/LNT_T_13/Dockerfile)
 
 - Service configurations.
 
-[service]()
+[service](https://github.com/persianflower/Deep-Learning/blob/main/LNT_T_13/service.yaml)
 
 - Deployment report.
+
+[Outputs](https://github.com/persianflower/Deep-Learning/tree/main/LNT_T_13/outputs)
 
