@@ -8,11 +8,11 @@ To understand Kubernetes orchestration and deploy containerized applications usi
 
 - Kubernetes YAML files.
 
-[File]()
+[File](https://github.com/persianflower/Deep-Learning/blob/main/LNT_Task_12/kubernetes.yaml)
 
 - Deployment screenshots.
 
-[Outputs]()
+[Outputs](https://github.com/persianflower/Deep-Learning/tree/main/LNT_Task_12/outputs)
 
 - Cluster setup report.
 
