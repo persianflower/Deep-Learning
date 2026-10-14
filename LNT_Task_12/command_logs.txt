@@ -1,0 +1,43 @@
+
+1. Deploying sample application to minikube
+
+minikube start
+
+minikube status
+
+minikube dashboard
+
+1.1 Creating a pod
+
+kubectl create deployment hello-node --image=registry.k8s.io/e2e-test-images/agnhost:2.53 -- /agnhost netexec --http-port=8080
+
+kubectl get deployments
+
+kubectl get pods
+
+kubectl get events
+
+kubectl config view
+
+kubectl logs hello-node-6f8b554fb7-dp4dd
+
+
+1.2 Creating a service
+
+kubectl expose deployment hello-node --type=LoadBalancer --port=8080
+
+kubectl get services
+
+minikube service hello-node
+
+
+1.3 Clean up
+
+kubectl delete service hello-node
+
+kubectl delete deployment hello-node
+
+minikube stop
+
+
+
