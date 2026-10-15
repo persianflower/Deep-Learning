@@ -92,10 +92,15 @@ This was done via the minikube dashboard
 
 - Trained model.
 
-[model]()
+[Trained model](https://github.com/persianflower/Deep-Learning/blob/main/LNT_Task_15/model_deep.pkl)
 
 - Docker and Kubernetes configuration files.
 
-[Dockerfile]()
-[Deployment]()
+[Dockerfile](https://github.com/persianflower/Deep-Learning/blob/main/LNT_Task_15/Dockerfile)
+
+[Deployment](https://github.com/persianflower/Deep-Learning/blob/main/LNT_Task_15/deployment.yaml)
+
+- Hosted site
+
+[Site](https://cifar-10-project.streamlit.app/)
 
