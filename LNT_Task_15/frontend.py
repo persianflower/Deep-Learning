@@ -7,8 +7,12 @@ import requests
 from PIL import Image
 import streamlit as st
 import cv2
+import os
 
-url = "http://0.0.0.0:8501/predict"
+url = os.getenv(
+    "API_URL",
+    "http://localhost:8501"
+)
 
 try:
     @st.cache_resource
@@ -20,37 +24,33 @@ except Exception as e:
 
 def main():
     try:
-        model=load_model()
+        #model=load_model()
         st.title('CIFAR-10 Prediction')
         st.write('Predict the image shown')
         image = st.file_uploader("Choose a file")
         try:
-            image =  Image.open(image)
+            image =  Image.open(image).convert("RGB")
             if st.button('Predict!'):
                 max_size = (51, 73)
                 image.thumbnail(max_size)
                 # creating thumbnail
                 image.save('thumb.png')
-                new_img = np.array(image)
-                new_img = cv2.resize(new_img, (32, 32))
-                new_img = np.dot(new_img[..., :3], [0.2989, 0.5870, 0.1140])
+                new_img = np.asarray(image,dtype=np.float32) / 255.0
                 new_img = 255 - new_img
-                data = np.array(new_img, dtype=np.float32)
-                data = data.reshape(1, 32, 32, 3)
-                #data = data / 255.0
-                # Perform prediction
+                new_img = np.expand_dims(new_img,axis=0)
                 try:
-                    response = requests.post(url,json=new_img.tolist())
+                    response = requests.post(f"{url}/predict",json=new_img.tolist())
                     #prediction = response.json()
                     predicted_class = int(np.argmax(response))
                     labels=[
-                        "1","2","3","4","5","6","7","8","9","10"
+                        "airplane","automobile","bird","cat","deer",
+                        "dog","frog","horse","ship","truck"
                     ]
                     label = labels[predicted_class]
                     st.success(f'Estimated category: {label}')
-                except requests.RequestException.response as e:
+                except requests.exceptions.RequestException as e:
                     st.error("Could not send request",e)
-        except requests.RequestException.response as e:
+        except requests.exceptions.RequestException as e:
             st.error("Please upload image",e)
     except Exception as e:
         print("Unexpected error",e)

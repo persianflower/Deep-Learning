@@ -20,15 +20,15 @@ def predict():
         data = request.get_json()
         if not data:
             return jsonify({"error":"No data provided"}),400
-        data = np.array(data, dtype=np.float32)
-        if data.size != 32 * 32:
+        new_img = np.asarray(data, dtype=np.float32) / 255.0
+        if new_img.size != 32 * 32:
             return jsonify({
-                "error": f"Expected 784 pixels, got {data.size}"
+                "error": f"Expected 1024 pixels, got {data.size}"
             }), 400
-        data = data.reshape(1, 32, 32, 3)
+        new_img = np.expand_dims(new_img, axis=0)
         #data = data / 255.0
-        prediction = model.predict(data)
-        predicted_class = int(np.argmax(prediction[0]))
+        prediction = model.predict(new_img)[0]
+        predicted_class = int(np.argmax(prediction))
         return jsonify({"prediction": predicted_class})
     except Exception as e:
         return jsonify({"error":str(e)}),400

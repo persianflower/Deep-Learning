@@ -1,0 +1,35 @@
+
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: cifar-10-deployment
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: cifar-10
+  template:
+    metadata:
+      labels:
+        app: cifar-10
+    spec:
+      containers:
+      - name: cifar-10
+        image: ayeshafaquih/cifar-10-application:latest
+        ports:
+        - containerPort: 8501
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: cifar-10-service
+spec:
+  type: NodePort
+  selector:
+    app: cifar-10
+  ports:
+  - protocol: TCP
+    port: 80
+    targetPort: 8501
+    nodePort: 30005
+
